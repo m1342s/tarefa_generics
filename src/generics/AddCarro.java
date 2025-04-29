@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddCarro {
-	public static <T extends Honda> void cadastro(List<T> lista, T carro ) {
+	public static <T extends Carro> void cadastro(List<T> lista, T carro ) {
 		lista.add(carro);
 		System.out.println("Carro adicionado :" + carro);
 		
 		
 	}
 	public static void main(String[] args) {
-	List<Honda> listaVeiculos=new ArrayList<>();
-	Honda veiculo1=new Honda("City","Honda",2023);
-	Honda veiculo2=new Honda("Civic","Honda",2023);
+	List<Carro> listaVeiculos=new ArrayList<>();
+	Carro veiculo1=new Honda("City","Honda",2023);
+	Carro veiculo2=new GM("Onix","GM",2023);
 	
 	cadastro(listaVeiculos,veiculo1);
 	cadastro(listaVeiculos,veiculo2);
